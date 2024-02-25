@@ -15,6 +15,8 @@ do
 done
 
 
+convert_imagem 2>erros_conversao.txt
+
 if [ $? -eq 0]
 then 
     echo "Os arquivos foram convertidos com sucesso!"
