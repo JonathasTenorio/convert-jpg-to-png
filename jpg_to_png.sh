@@ -10,7 +10,7 @@ fi
 
 for image in *.jpg
 do
-    local imagem_sem_extensao=$(ls $imagem | awk -F. '{ print $1 }')
+    local imagem_sem_extensao=$(ls $image | awk -F. '{ print $1 }')
     convert $imagem_sem_extensao.jpg png/$imagem_sem_extensao.png
 done
 }
